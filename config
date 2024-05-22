@@ -6,7 +6,6 @@
 #
 
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id gxkb
 exec --no-startup-id picom -b
 exec_always --no-startup-id "bash /home/tgol/.config/polybar/launch.sh"
 # i3 config file (v4)
@@ -37,7 +36,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 for_window [all] title_window_icon on
 
